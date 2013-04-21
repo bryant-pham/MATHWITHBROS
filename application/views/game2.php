@@ -51,7 +51,7 @@
 			<div id="button4" class="button">4</div>
 			<div id="button5" class="button">5</div>
 			<div id="button6" class="button">6</div>
-			<div id="button7 style='font-size:2em;" class="button">7</div>
+			<div id="button7" class="button">7</div>
 			<div id="button8" class="button">8</div>
 			<div id="button9" class="button">9</div>
         	<div id="button0" class="button">0</div>
