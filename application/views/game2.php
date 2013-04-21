@@ -10,7 +10,7 @@
 			var Timer;
 			var TotalSeconds;
 			var score = 0;
-			var player2_id = <?php echo $player2_id ?>;
+			var game_id = <?php echo $game_id ?> 
 
 			function CreateTimer(TimerID, Time) {
 				Timer = document.getElementById(TimerID);

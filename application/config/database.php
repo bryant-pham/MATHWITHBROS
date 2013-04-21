@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'teamyolo_admin';
+$db['default']['username'] = 'admin';
 $db['default']['password'] = 'admin';
-$db['default']['database'] = 'teamyolo_duelacademy';
+$db['default']['database'] = 'duel_academy';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

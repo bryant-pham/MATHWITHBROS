@@ -1,5 +1,5 @@
 .box {
-	width: 600px;
+	width: 400px;
 	height: 50px;
 	font-size: 250%;
 	margin-right: auto;
@@ -76,13 +76,6 @@
 	padding-top: 30px;
 	margin: 5px;
 }
-#question {
-	width: 600px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 7px;
-	margin-bottom: 7px;
-}
 
 #clear {
 	height: 80px;
@@ -97,18 +90,34 @@
 
 #wrapper {
 	height: 748px;
-	width: 800px;
+	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 #timer {
-	width: 600px;
-	position: relative;
+	width: 400px;
+
 	font-size: 300%;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
+}
+#answer-box {
+
+	margin-right: auto;
+	margin-left: auto;
+	width: 400px;
+	left: 100px;
+	margin-top: 3px;
+	margin-bottom: 8px;
+}
+#question {
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 7px;
+	margin-bottom: 7px;
 }
 #buttonID {
 	clear: both;
@@ -118,16 +127,72 @@
 	height: 400px;
 }
 
-#answer-box {
-	position: relative;
+#login {
+	width: 225px;
+	height: 75px;
 	margin-right: auto;
 	margin-left: auto;
-	width: 600px;
-	left: 100px;
-	margin-top: 3px;
-	margin-bottom: 8px;
+}
+#logo {
+	width: 200px;
+	height: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(http://i35.tinypic.com/352eo9f.png);
+	background-repeat: no-repeat;
+	padding-top: 30px;
+}
+#homeLogo{
+	padding-top: 90px;
+}
+#homeButton {
+	width: 225px;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+#loginButton {
+	width: 80px;
+	height: 35px;
+	display: inline-block;
+	float: left;
+	margin-right: 5px; 
+}
+#registrationButton {
+	width: 80px;
+	height: 35px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#registerButton {
+	width: 80px;
+	height: 35px;
+	display: inline-block;
+	float: left;
 }
 body {
-	background-image: url(/Documents/DuelAcademy/img/dust.png);
-	background-repeat: repeat;
+	margin: 0;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font-size: 14px;
+ 	line-height: 20px;
+ 	color: #333333;
+ 	background-color: #ccc;
+ 	background-image: url(http://webdesignledger.com/wp-content/uploads/2012/09/patterns02.jpg);
+}
+.resizedTextbox {
+	width: 70px; 
+	height: 20px;
+}
+#register{
+	width: 190px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#eventsWrap{
+	width: 500px;
+	height: 500px;
+	overflow: visible;
+	margin-right: auto;
+	margin-left: auto;
 }

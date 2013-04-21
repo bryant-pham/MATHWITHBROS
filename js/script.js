@@ -63,5 +63,5 @@ $('document').ready( function() {
 		$( "#answer-box" ).val( '' );
 	});
 	questionGen();
-	//CreateTimer( "timer", 10 );
+	CreateTimer( "timer", 10 );
 });

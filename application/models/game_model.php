@@ -8,8 +8,8 @@ class Game_model extends CI_Model {
 
 	public function challengeGame( $player2_id, $score ) {
 		$data = array(
-			'player1_id' => 1, //TODO: CHANGE THESE HARDCODES VALUES
-			'player2_id' => 2, //TODO: CHANGE THESE HARDCODES VALUES
+			'player1_id' => $this->session->userdata('user_id'),
+			'player2_id' => $player2_id,
 			'player1_score' => $score,
 		);
 		$this->db->insert( 'game', $data );
@@ -19,7 +19,7 @@ class Game_model extends CI_Model {
 		$data = array(
 			'player2_score' => $score
 		);
-		$this->db->where( 'player2_id', 2 );  //TODO: CHANGE THESE HARDCODES VALUES
+		$this->db->where( 'player2_id', $this->session->userdata('user_id' ));
 		$this->db->where( 'game_id', $game_id );
 		$this->db->update( 'game', $data );
 	}

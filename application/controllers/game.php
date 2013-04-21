@@ -6,6 +6,7 @@ class Game extends CI_Controller {
 		parent::__construct();
 		$this->load->model( 'Game_model' );
 		$this->load->helper('url');
+		$this->user_id = $this->session->userdata( 'user_id' );
 	}
 
 	public function index( $page ) {
@@ -31,6 +32,6 @@ class Game extends CI_Controller {
 	}
 
 	public function getDuels() {
-		$query = $this->Game_model->fetchDuelRequests( 1 ); //TODO: CHANGE HARDCODED VALUE
+		$query = $this->Game_model->fetchDuelRequests( $this->user_id );
 	}
 }
