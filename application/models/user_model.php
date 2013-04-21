@@ -27,9 +27,12 @@ class User_model extends CI_Model {
 		$data = array( 
 			'user_name' => $user_name
 		);
-		$this->db->insert( 'user', $data );
-		$query = $this->db->get_where( 'user', array( 'user_name' => $user_name ) );
-		$row = $query->row();
-		$this->session->set_userdata( 'user_id', $row->user_id );
+		if( $this->db->insert( 'user', $data ) ) {
+			$query = $this->db->get_where( 'user', array( 'user_name' => $user_name ) );
+			$row = $query->row();
+			$this->session->set_userdata( 'user_id', $row->user_id );
+			return TRUE;
+		}
+		return FALSE;
 	}
 }

@@ -9,22 +9,25 @@
 
 <body>
 <div id="wrapper">
-		<div id="logo"></div>
+		<div id="logo"><img src="http://i35.tinypic.com/352eo9f.png"/></div>
+			<center><h1 class=".hero-unit h1"> Your Turn</h1></center>
 		<div id="eventsWrap">
-			<table>
-				<tr>
-				<td>Juicy</td>
-				<td>Juicy</td>
-				</tr>
-				<tr>
-					<td>Peter</td>
-					<td>Peter</td>
-				</tr>
-				<tr>
-					<td>Fistpump</td>
-					<td>Fistpump</td>
-				</tr>
-			</table>		
+
+				<table width="500" border="0" class="table table-hover">
+					<?php if( !( empty( $query ) ) ) {?>
+					<?php foreach( $query as $row ): ?>
+					<tr>
+						<td><a href=<?php echo site_url() . '/game/loadduel/' . $row[ 'game_id' ] ?>>
+							<img src="http://findicons.com/files/icons/560/fast_icon_users/128/user.png" width="80" height="80" border="0">
+						</a></td>
+						<td><?php echo $row[ 'user_name' ] ?></td>
+
+					</tr>
+					<?php endforeach; ?>	
+					<?php } else echo "<h1 align='center'>No Opponents</h1>" ?>	
+				</table>	
+			</div>	
+			<div id="challengeButton"><a class="btn btn-warning" href=<?php echo site_url() . "/game/getPlayerList"?>>Start a New Game</a>
 		</div>
 </div>
 </body>

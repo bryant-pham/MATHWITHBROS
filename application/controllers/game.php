@@ -25,13 +25,23 @@ class Game extends CI_Controller {
 
 	public function challenge( $player2_id, $score ) {
 		$this->Game_model->challengeGame( $player2_id, $score );
+		redirect( site_url() . '/game/renderMain' );
 	}
 
 	public function duel( $game_id, $score ) {
 		$this->Game_model->challengedDuel( $game_id, $score );
+		redirect( site_url() . '/game/renderMain' );
 	}
 
-	public function getDuels() {
+	public function renderMain() {
 		$query = $this->Game_model->fetchDuelRequests( $this->user_id );
+		$data[ 'query' ] = $query->result_array();
+		$this->load->view( 'events', $data );
+	}
+
+	public function getPlayerlist() {
+		$query = $this->Game_model->fetchPlayerList();
+		$data[ 'query' ] = $query->result_array();
+		$this->load->view( 'playerlist', $data );
 	}
 }

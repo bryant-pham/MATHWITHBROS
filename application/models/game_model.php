@@ -25,10 +25,16 @@ class Game_model extends CI_Model {
 	}
 
 	public function fetchDuelRequests( $player_id ) {
-		$query = $this->db->query( "SELECT * 
-									FROM game 	
-									WHERE player2_id = " . $player_id . 
-								  " AND player2_score = NULL" );
+		$query = $this->db->query( "SELECT player1_id, user_name, game_id 
+									FROM game, user 	
+									WHERE user_id = player1_id
+								  	AND player2_id = " . $player_id . 
+								  " AND player2_score is NULL" );
+		return $query;
+	}
+
+	public function fetchPlayerList() {
+		$query = $this->db->query( "SELECT * FROM user" );
 		return $query;
 	}
 }

@@ -15,13 +15,13 @@ class User extends CI_Controller {
 	
 	public function login() {
 		if( $this->User_model->checkPlayer() ) {
-			redirect( 'http://www.google.com' );
+			redirect( site_url() . '/game/renderMain' );
 		}
 	}
 
 	public function register() {
 		if( $this->User_model->insertPlayer() ) {
-			redirect( 'http://www.google.com' );
+			redirect( site_url() . '/game/renderMain' );
 		}
 	}
 }

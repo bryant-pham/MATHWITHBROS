@@ -97,7 +97,7 @@
 
 #timer {
 	width: 400px;
-
+	height: 200px;
 	font-size: 300%;
 	margin-right: auto;
 	margin-left: auto;
@@ -133,15 +133,17 @@
 	margin-right: auto;
 	margin-left: auto;
 }
+
 #logo {
 	width: 200px;
 	height: 150px;
 	margin-right: auto;
-	margin-left: auto;
+	margin-left: auto;/****************************
 	background-image: url(http://i35.tinypic.com/352eo9f.png);
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;******************************/
 	padding-top: 30px;
 }
+
 #homeLogo{
 	padding-top: 90px;
 }
@@ -190,9 +192,60 @@ body {
 	margin-left: auto;
 }
 #eventsWrap{
-	width: 500px;
-	height: 500px;
-	overflow: visible;
+	width: 600px;
+	height: 300px;
+	overflow: auto;
 	margin-right: auto;
 	margin-left: auto;
+	background-color: #fff;
+}
+#challengeButton{
+	width:150px;
+	height:35px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top:20px;
+	margin-top:;
+}
+
+#listWrap {
+  width: 600px;
+  margin: 0 auto;
+  overflow: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+ 
+ul {
+  list-style-type: none;
+  height: 600px;
+}
+ 
+li img {
+  float: left;
+  margin: 10px;
+  border: 5px solid #fff;
+  width: 90px;
+  height: 90px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+ 
+  -webkit-transition: box-shadow 0.5s ease;
+  -moz-transition: box-shadow 0.5s ease;
+  -o-transition: box-shadow 0.5s ease;
+  -ms-transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+}
+ 
+li img:hover {
+  -webkit-box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+}
+
+#names {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	float: left;
 }

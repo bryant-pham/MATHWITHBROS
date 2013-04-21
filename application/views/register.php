@@ -9,11 +9,10 @@
 
 <body>
 <div id="wrapper">
-		<div id="logo"></div>
+		<div id="logo"><img src="http://i35.tinypic.com/352eo9f.png"/></div>
 	<form action="http://localhost/index.php/user/register" method="POST">
 	<div id="register">
 		<div id="login"> Login: <input type="text" class="resizedTexbox" name="user_name"></div>
-		<div id="password"> Password: <input type="text" class="resizedTexbox" name="password"></div>
 	</div>
 		<div id="registrationButton"><input class="btn btn-success" type="submit" value="Register"></div>
 	</div>
