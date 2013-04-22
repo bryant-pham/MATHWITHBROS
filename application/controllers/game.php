@@ -35,6 +35,8 @@ class Game extends CI_Controller {
 
 	public function renderMain() {
 		$query = $this->Game_model->fetchDuelRequests( $this->user_id );
+		$matchHistory = $this->Game_model->fetchMatchHistory( $this->user_id );
+		$data[ 'matchHistory' ] = $matchHistory->result_array();
 		$data[ 'query' ] = $query->result_array();
 		$this->load->view( 'events', $data );
 	}

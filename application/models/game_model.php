@@ -37,4 +37,19 @@ class Game_model extends CI_Model {
 		$query = $this->db->query( "SELECT * FROM user" );
 		return $query;
 	}
+
+	public function fetchMatchHistory( $player_id ) {
+		$query = $this->db->query( 'SELECT * 
+									FROM game, user 
+									WHERE user_id = player1_id
+									AND player1_id = ' . $player_id .
+								  ' AND winner IS NOT NULL 
+								    UNION
+								    SELECT *
+								    FROM game, user
+								    WHERE user_id = player2_id
+								    AND player2_id = ' . $player_id .
+								  ' AND winner IS NOT NULL'  );
+		return $query;
+	}
 }

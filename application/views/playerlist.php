@@ -5,6 +5,7 @@
 <title>Duel Academy</title>
 <link href="http://duelacademy.myapprenticeapp.com/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="http://duelacademy.myapprenticeapp.com/css/style.css" rel="stylesheet" type="text/css" />
+<script src=<?php echo base_url() . "js/analytics.js"?>></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -15,8 +16,8 @@
   	<?php foreach( $query as $row ): ?>
   	<div id="names">
 	    <li><a href=<?php echo site_url() . '/game/loadchallenge/' . $row[ 'user_id' ] ?>>
-	    	<img src="http://findicons.com/files/icons/560/fast_icon_users/128/user.png" width="80" height="80" border="0">
-	    	<center><?php echo $row[ 'user_name' ] ?><center>
+	    	<img src="http://findicons.com/files/icons/560/fast_icon_users/128/user.png" width="80" height="80" border="0"></br>
+	    	<?php echo $row[ 'user_name' ] ?>
 	    </li>
     </div>
     <?php endforeach; ?>

@@ -4,6 +4,7 @@
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src=<?php echo base_url() . "js/math-lib.js" ?>></script>
 		<script src=<?php echo base_url() . "js/script.js"?>></script>
+		<script src=<?php echo base_url() . "js/analytics.js"?>></script>
     	<link rel="stylesheet" href=<?php echo base_url('css/style.css') ?> /> 
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<script>
@@ -42,9 +43,10 @@
 <body>
 	<div id="wrapper">
 		<div id="timer"></div>
-    <div id="question"><input id="question-box" class="box" type="text" value="1 + 2"></div>
-		<div><input id="answer-box" class="box" type="text"></div>
+		
 		<div id="buttonID">
+			<input id="question-box" class="box2" type="text">
+			<input id="answer-box" class="box" type="text"/>
 	      	<div id="button1" class="button">1</div>
 			<div id="button2" class="button">2</div>
 			<div id="button3" class="button">3</div>

@@ -5,6 +5,7 @@
 <title>Duel Academy</title>
 <link href="http://duelacademy.myapprenticeapp.com/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="http://duelacademy.myapprenticeapp.com/css/style.css" rel="stylesheet" type="text/css" />
+<script src=<?php echo base_url() . "js/analytics.js"?>></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
 		<div id="login"> Login: <input type="text" class="resizedTexbox" name="user_name"></div>
 		<div id="homeButton"> 
 			<div id="loginButton"><input type="submit" class="btn btn-success" value="Login"></div>
-			<div id="registerButton"><a class="btn btn-warning" href=<?php echo site_url() . "/user/index/register"?>>Register</a></div>
+			<div id="registerButton"><a class="btn btn-primary" href=<?php echo site_url() . "/user/index/register"?>>Register</a></div>
 		</div>
 	</form>
 
